@@ -14,6 +14,7 @@ var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #inc
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
+
 //New task list item
 var createNewTaskElement=function(taskString){
 
@@ -80,12 +81,18 @@ var editTask=function(){
     console.log("Change 'edit' to 'save'");
 
 
-    var listItem=this.parentNode;
+    var listItem=this.parentNode;  console.log(listItem);
 
-    var editInput=listItem.querySelector('input[type=text]');
+    var editInput=listItem.querySelector('input[type=text]'); 
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit");
     var containsClass=listItem.classList.contains("editMode");
+
+    console.log(editInput);
+    console.log(label);
+    console.log(editBtn);
+    console.log(containsClass);
+
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -181,6 +188,7 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
 //cycle over completedTasksHolder ul list items
 for (var i=0; i<completedTasksHolder.children.length;i++){
+    console.log(completedTasksHolder);
     //bind events to list items chldren(tasksIncompleted)
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }

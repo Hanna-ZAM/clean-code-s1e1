@@ -6,44 +6,45 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
 
-  <body>
-    <header class="aaa"><img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-        <a class="more_inf" 
+  <body class="body">
+    <header class="header"><img class="header_img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix"><a class="header_link" 
         href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
-    <main class="centered-main-page-element">
-      <section class="section section_add"> 
-        <section class="add-item" id="top-section-for-adding-element-to-list">
-        <h3 for="new-task">Add Item</h3>
-        <label class="task-row-wrapper">
-            <input id="new-task" class="task" type="text">
-            <button>Add</button></label>
+    <main class="main">
+      <section class="section section_add">
+        <h3 class="title section_title title_add">Add Item</h3>
+        <label class="lable label_add">
+            <input class="label_input label_input_add" type="text">
+            <button class="button">Add</button></label>
       </section>
-      <section>
-        <h3>Todo</h3>
-        <ul id="incomplete-tasks">
-          <li><input type="checkbox">
-              <label class="task">Pay Bills</label>
-              <input type="text" class="task">
-              <button class="edit">Edit</button>
-              <button class="delete"><img src="./remove.svg" alt=""></button></li>
-          <li class="edit-mode"><input type="checkbox">
-              <label class="task">Go Shopping</label>
-              <input type="text" value="Go Shopping" class="task">
-              <button class="edit">Save</button>
-              <button class="delete"><img src="./remove.svg" alt=""></button></li>
+      <section class="section section_todo">
+        <h3 class="title section_title">Todo</h3>
+        <ul class="doing-list">
+          <li class="doing-item doing-item_edit">
+              <input class="doing-item_checkbox" type="checkbox">
+              <label class="label label_edit">Pay Bills</label>
+              <input class="label_input label_input_edit" type="text" >
+              <button class="button">Edit</button>
+              <button class="button-delete"><img class ="button-delete_img" src="./remove.svg" alt=""></button></li>
+          <li class="doing-item doing-item_save">
+              <input class="doing-item_checkbox" type="checkbox">
+              <label class="label label_save">Go Shopping</label>
+              <input class="label_input label_input_save" type="text" value="Go Shopping" >
+              <button class="button">Save</button>
+              <button class="button-delete"><img class="button-delete_img" src="./remove.svg" alt=""></button></li>
         </ul>
       </section>
-      <section>
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li><input type="checkbox" checked>
-              <label class="task">See the Doctor</label>
-              <input type="text" class="task">
-              <button class="edit">Edit</button>
-              <button class="delete"><img src="./remove.svg" alt=""></button></li>
+      <section class="section section_completed">
+        <h3 class="title section_title">Completed</h3>
+        <ul class="doing-list doing-list_completed">
+          <li class="doing-item doing-item-edit">
+              <input class="doing-item_checkbox" type="checkbox" checked>
+              <label class="label label_completed">See the Doctor</label>
+              <input class="label_input label_input_edit" type="text">
+              <button class="button">Edit</button>
+              <button class="button-delete"><img class="button-delete_img" src="./remove.svg" alt=""></button></li>
         </ul>
-      </section>
+    </section>
     </main>
     <script src="app.js"></script>
   </body>
