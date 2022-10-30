@@ -16,13 +16,15 @@ body {
   width: 100%;
 }
 
-.aaa .more_inf {
+.aaa 
+.more_inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-.aaa { text-align: center;
+.aaa { 
+  text-align: center;
 }
 
 }
