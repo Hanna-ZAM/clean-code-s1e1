@@ -7,9 +7,12 @@
 
 .header {
   width: 500px;
-  margin: 0 auto;
   display: block;
   text-align: right;
+}
+
+.body_header{
+  margin: 0 auto;
 }
 
 .header_img {
@@ -31,6 +34,9 @@
 .main {
   display: block;
   width: 500px;
+}
+
+.body_main{
   margin: 0 auto 0;
 }
 
@@ -40,8 +46,7 @@
 }
 
 .label_input,
-.label_edit, 
-.label_completed {
+.label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -51,9 +56,9 @@
   display: flex;
 }
 
-.doing-list {
+.section_doing-list {
+  padding: 0;
   margin:0;
-  padding: 0px;
 }
 
 .doing-item,
@@ -88,9 +93,11 @@
   font-weight: 700;
   font-size: 15px;
   border-bottom: 2px solid #333;
+  text-transform: uppercase;
+}
+.section_title{
   padding: 30px 0 10px;
   margin: 0;
-  text-transform: uppercase;
 }
 
 .label_input {
@@ -134,18 +141,18 @@
   vertical-align: middle;
 }
 
-.doing-item > .doing-item_checkbox {
+.doing-item_checkbox {
   margin: 0 10px;
 }
 
-.doing-item > .label {
+.label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.doing-item > .label_input {
+.label_input {
   width: 226px
 }
 
@@ -154,7 +161,7 @@
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
--
+
 .button-delete_img:hover {
   transform: rotateZ(0);
 }
