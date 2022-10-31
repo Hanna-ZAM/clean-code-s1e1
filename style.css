@@ -11,15 +11,15 @@
   text-align: right;
 }
 
-.body_header{
+.body__header{
   margin: 0 auto;
 }
 
-.header_img {
+.header__img {
   width: 100%;
 }
 
-.header_link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -36,37 +36,38 @@
   width: 500px;
 }
 
-.body_main{
+.body__main {
   margin: 0 auto 0;
 }
 
-.section_add {
+.main__section-add {
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
 
-.label_input,
-.label {
+.input,
+.item__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.label_add {
+.section-add__label {
   display: flex;
 }
 
-.section_doing-list {
+.section__doing-list,
+.section__doing-list {
   padding: 0;
   margin:0;
 }
 
-.doing-item,
+.item,
 .title {
   list-style: none;
 }
 
-.label_input,
+.input,
 .button,
 .button-delete {
   outline: none;
@@ -95,12 +96,13 @@
   border-bottom: 2px solid #333;
   text-transform: uppercase;
 }
-.section_title{
+.section__title {
   padding: 30px 0 10px;
   margin: 0;
 }
 
-.label_input {
+.item__input,
+.section-add__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -113,22 +115,22 @@
   color: #888;
 }
 
-.label_input:focus {
+.input:focus {
   color: #333;
 }
 
 /* New Task */
-.title_add {
+.section-add__title {
   display: block;
   margin: 0 0 20px;
 }
 
-.label_input_add {
+.section-add__input {
   width: 318px;
 }
 
 /* Task list */
-.doing-item {
+.doing-list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -137,32 +139,33 @@
   align-items: center;
 }
 
-.doing-item > * {
+
+.item > * {
   vertical-align: middle;
 }
 
-.doing-item_checkbox {
+.item__checkbox {
   margin: 0 10px;
 }
 
-.label {
+.item__label_edit {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.label_input {
+.input_save {
   width: 226px
 }
 
-.button-delete_img {
+.button-delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button-delete_img:hover {
+.button-delete__img:hover {
   transform: rotateZ(0);
 }
 
@@ -173,15 +176,15 @@
 }
 
 /* Edit Task */
-.label_input_edit {
+.input_edit {
   display: none;
 }
 
-.label_input_save {
+.input_save {
   display: inline-block;
   width: 224px;
 }
 
-.label_save {
+.item__label_save {
   display: none;
 }
