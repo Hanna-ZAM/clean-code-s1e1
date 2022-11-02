@@ -97,7 +97,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('.input');
     var label=listItem.querySelector(".item__label");
     var editBtn=listItem.querySelector(".button");
-    var containsClass=label.classList.contains("item_save");
+    var containsClass=label.classList.contains("item__label_save");
 
     console.log(editInput);
     console.log(label);
